@@ -1,1 +1,1 @@
-
+If the virus family test for a given sample is positive it will be tested at the species level. Additionally, the same testingVialID is tested for multiple pathogens. This means when calculating the denominator (number tested) for prevalence, the results must be filtered by testPathogenName.
