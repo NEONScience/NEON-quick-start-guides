@@ -1,1 +1,8 @@
-
+|Table 1|Table 2|Join by field(s)|
+|------------------------|------------------------|-------------------------------|
+ltr_pertrap|ltr_fielddata|trapID
+ltr_pertrap|ltr_massdata|Join not recommended: ltr_pertrap provides metadata at the trap level
+ltr_pertrap|ltr_chemistrySubsampling|Join not recommended: ltr_pertrap and ltr_chemistrySubsampling represent different spatial resolutions
+ltr_fielddata|ltr_massdata|fieldSampleID
+ltr_fielddata|ltr_chemistrySubsampling|Join not recommended: ltr_fielddata and ltr_chemistrySubsampling represent different spatial resolutions
+ltr_massdata|ltr_chemstrySubsampling|Not fully automatable: multiple massSampleIDs are pooled into massSampleIDList
