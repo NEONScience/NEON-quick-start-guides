@@ -1,0 +1,2 @@
+Conductivity of surface water in microsiemens per centimeter.
+
