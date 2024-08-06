@@ -1,1 +1,1 @@
-Relative humidity, temperature, and dew or frost point temperature, available as one- and thirty-minute averages. Observations are made by sensors located on the buoy in lakes and rivers.
+Temperature, relative humidity, and dew or frost point temperature, available as one- and thirty-minute averages. Observations are made by sensors located on the buoy in lakes and rivers.
