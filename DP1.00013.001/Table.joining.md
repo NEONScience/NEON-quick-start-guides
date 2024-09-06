@@ -1,5 +1,5 @@
 |Table 1|Table 2|Join by field Table 1|Join by field Table 2|
-|------------------------|------------------------|-------------------------------|
+|------------------------|------------------------|-------------------------------|----------------------------------|
 wdp_collection|wdp_collectionChem|chemSubsampleID|chemSubsampleID|
 wdp_collection|wdp_chemLab|chemSubsampleID|chemSubsampleID|
 wdp_collection|wdi_collection|sampleID|sampleID|
