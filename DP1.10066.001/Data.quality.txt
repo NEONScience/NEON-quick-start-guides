@@ -1,1 +1,3 @@
 The mpr_carbonNitrogen table contains the results of analysis for carbon, nitrogen, 13C, and 15N in sampled roots. Quality flags in the table are provided by the analytical laboratory, and are the fields ending in QF. The bgc_CNiso_externalSummary table contains the lab's ongoing quality control data, including the results of standard samples run as unknowns.
+
+Please note that quality checks are comprehensive but not exhaustive; therefore, unknown data quality issues may exist. Users are advised to evaluate quality of the data as relevant to the scientific research question being addressed, perform data review and post-processing prior to analysis, and use the data quality information and issue logs included in download packages to aid interpretation.

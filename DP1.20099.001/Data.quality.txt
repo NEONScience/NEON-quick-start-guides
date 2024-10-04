@@ -1,1 +1,0 @@
-Thaw depth is measured by probe in 10 locations around each well; the mean and standard deviation of these measurements is also provided.
