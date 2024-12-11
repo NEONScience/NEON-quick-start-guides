@@ -1,1 +1,1 @@
-Water quality measurements include specific conductance, dissolved oxygen, pH, chlorophyll a, turbidity and fluorescent dissolved organic matter (fDOM). 
+Water quality measurements include specific conductance, dissolved oxygen, pH, chlorophyll a (at lake and river sites only), turbidity and fluorescent dissolved organic matter (fDOM). 
