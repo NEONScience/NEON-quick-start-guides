@@ -1,1 +1,2 @@
 
+In the precipitation-weighing gauge data product frequency streams are translated to weight. That weight is used to derive precipitation depth and thereby bulk precipitation. Before bulk precipitation is calculated, depth data are processed through a smoothing algorithm to reduce noise induced by diel environmental fluctuations. 
