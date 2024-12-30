@@ -1,0 +1,1 @@
+Taxonomic identification data for bacterial, archaeal, and fungal communities from soil collections derived from amplicon sequence data of ribosomal molecular markers 16S and ITS. 
