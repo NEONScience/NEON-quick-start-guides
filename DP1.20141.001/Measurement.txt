@@ -1,1 +1,1 @@
-Taxonomic identification data for bacterial, archaeal, and fungal communities in surface water
+Taxonomic identification data for bacterial, archaeal, and fungal communities in surface water. NOTE: This data product has been deprecated and is being replaced by Surface Water microbe community taxonomy (DP1.20141.002). Please refer to this data product for details on samples, data analysis, and guides for use.
