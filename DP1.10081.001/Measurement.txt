@@ -1,1 +1,1 @@
-Taxonomic identification data for bacterial, archaeal, and fungal communities in soils
+Taxonomic identification data for bacterial, archaeal, and fungal communities in soils. NOTE: This data product has been deprecated and is being replaced by Soil microbe community taxonomy (DP1.10081.002). Please refer to this data product for details on samples, data analysis, and guides for use.
