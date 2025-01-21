@@ -1,1 +1,1 @@
-Taxonomic identification data for bacterial, archaeal, and fungal communities in benthic sediments. NOTE: This data product has been deprecated and is being replaced by Benthic microbe community taxonomy (DP1.20286.002). Please refer to this data product for details on samples, data analysis, and guides for use.
+Taxonomic identification data for bacterial, archaeal, and fungal communities in benthic sediments 2014-2018. Beginning with 2019 samples, the algorithm was revised and this product was replaced by Benthic microbe community taxonomy (DP1.20086.002).
