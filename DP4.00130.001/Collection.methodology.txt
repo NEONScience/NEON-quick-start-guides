@@ -1,1 +1,1 @@
-Continuous discharge is derived from Elevation of surface water (DP1.20016.001), Stage-discharge rating curves (DP4.00133.001), Discharge field collection (DP1.20048.001), and Gauge height (DP1.20267.001). See documentation for those data products for collection and sensor details.
+Continuous discharge is derived from Elevation of surface water (DP1.20016.001), Discharge field collection (DP1.20048.001), Gauge height (DP1.20267.001), and Stage-discharge rating curves (DP4.00133.001). See documentation for those data products for sensor details and collection methodology.
