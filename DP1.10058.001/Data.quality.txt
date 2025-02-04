@@ -1,1 +1,3 @@
 Uncertainty in taxonomic identification is recorded in the identificationQualifier fields in each table. If identification to species is not possible, identification to a higher taxonomic rank is recorded, and indicated in the taxonRank field. The measuredBy field records the staff member who made the identification, to enable analyses of observer effects.
+
+Please note that quality checks are comprehensive but not exhaustive; therefore, unknown data quality issues may exist. Users are advised to evaluate quality of the data as relevant to the scientific research question being addressed, perform data review and post-processing prior to analysis, and use the data quality information and issue logs included in download packages to aid interpretation.
