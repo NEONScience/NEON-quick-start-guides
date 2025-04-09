@@ -1,1 +1,1 @@
-Stage-discharge rating curves are derived from Gauge height (DP1.20267.001) and Discharge field collection (DP1.20048.001). See documentation for those data products for collection details.
+Stage-discharge rating curves are derived from the Discharge field collection (DP1.20048.001) data product. See documentation for that data product for collection details.

@@ -1,8 +1,8 @@
 "Table1","Table2","JoinByTable1","JoinByTable2","Notes"
-"wdp_collection","wdp_collectionChem","chemSubsampleID","sampleID",NA
+"wdp_collection","wdp_collectionChem","chemSubsampleID","chemSubsampleID",NA
 "wdp_collection","wdp_chemLab","chemSubsampleID","chemSubsampleID",NA
 "wdp_collection","wdi_collection","sampleID","sampleID",NA
-"wdp_chemLab","wdp_collectionChem","chemSubsampleID","sampleID",NA
+"wdp_chemLab","wdp_collectionChem","chemSubsampleID","chemSubsampleID",NA
 "wdp_sensor","Any other table","Join not recommended: wdp_sensor contains records of collection assembly status every 10 seconds. Collections are made every two weeks.","Join not recommended: wdp_sensor contains records of collection assembly status every 10 seconds. Collections are made every two weeks.",NA
 "wdi_collection","wdp_collection","sampleID","sampleID",NA
 "wdi_collection","wdi_collectionIso","sampleID","sampleID",NA
@@ -29,11 +29,13 @@
 "dpm_field","dpm_lab","sampleID","sampleID",NA
 "dpm_lab","dpm_filterBlank","Join not recommended: dpm_filterBlank is for sample request purposes. These samples are not sent to the field or analyzed by the lab.","Join not recommended: dpm_filterBlank is for sample request purposes. These samples are not sent to the field or analyzed by the lab.",NA
 "dpm_sensor","Any other table","Join not recommended: dpm_sensor contains records of collection assembly status every 10 seconds. Collections are made every two weeks.","Join not recommended: dpm_sensor contains records of collection assembly status every 10 seconds. Collections are made every two weeks.",NA
-"brd_perpoint","brd_countdata","eventID, pointID","eventID, pointID",NA
-"brd_perpoint","brd_references","siteID, startDate","siteID, date",NA
-"brd_countdata","brd_references","Join not recommended: References apply to entire observation period. Connect references to observations via siteID and dates.","",NA
+"brd_perpoint","brd_countdata","eventID, plotID, pointID","eventID, plotID, pointID",NA
+"brd_countdata","brd_identificationHistory","identificationHistoryID","identificationHistoryID",NA
+"brd_references","Any other table","Join not recommended: References apply to entire siteID by year combination. Connect references to observations via siteID and the year component of startDate.","",NA
 "brd_personnel","Any other table","Join not recommended: Personnel are tested annually. To find relevant scores, measuredBy and technicianID fields match for the same observer, and test scores are relevant to data collected during the year of the test(s).","",NA
+"cdw_fieldtally","cdw_tally_identificationHistory","identificationHistoryID","identificationHistoryID",NA
 "cdw_densitylog","cdw_densitydisk","sampleID","sampleID",NA
+"cdw_densitylog","cdw_identificationHistory","identificationHistoryID","identificationHistoryID",NA
 "dhp_perplot","dhp_perimagefile","sampleID","sampleID",NA
 "bet_fielddata","bet_sorting","sampleID","sampleID",NA
 "bet_sorting","bet_parataxonomistID","subsampleID","subsampleID",NA
@@ -138,12 +140,16 @@
 "phe_perindividual","phe_statusintensity","individualID","individualID",NA
 "phe_perindividualperyear","phe_statusintensity","Not fully automatable: join by individualID, then by year as calculated from the date in each table","Not fully automatable: join by individualID, then by year as calculated from the date in each table",NA
 "div_1m2Data","div_10m2Data100m2Data","Direct join not recommended. See Standard calculations.","Direct join not recommended. See Standard calculations.",NA
-"div_geneticarchive","Any other table","Join not recommended. Data resolution does not match other tables.","Join not recommended. Data resolution does not match other tables.",NA
+"div_1m2Data","div_morphospecies","siteID, morphospeciesID","siteID, morphospeciesID",NA
+"div_1m2Data","div_identificationHistory","identificationHistoryID","identificationHistoryID",NA
+"div_10m2Data100m2Data","div_morphospecies","siteID, morphospeciesID","siteID, morphospeciesID",NA
+"div_10m2Data100m2Data","div_identificationHistory","identificationHistoryID","identificationHistoryID",NA
 "div_morphospecies","Any other table","Join not recommended. Data resolution does not match other tables.","Join not recommended. Data resolution does not match other tables.",NA
-"div_voucher","Any other table","Join not recommended. Data resolution does not match other tables.","Join not recommended. Data resolution does not match other tables.",NA
+"div_geneticarchive","div_identificationHistory","identificationHistoryID","identificationHistoryID",NA
+"div_voucher","div_identificationHistory","identificationHistoryID","identificationHistoryID",NA
 "rpt_bloodtesting","mam_pertrapnight","bloodSampleID","bloodSampleID",NA
-"rpt2_pathogentesting","mam_pertrapnight","sampleID","Not fully automatable: pathogen testing results should be filtered to sampleIDs ending in either .E or .B and joined to mammal data via the earSampleID or via the bloodSampleID respectively.",NA
-"rpt2_pathogentesting","rpt2_pathogenqa","Simple join not recommended. BatchIDs used for joining are replicated in both tables such that joining tables results in repeated records.  It is recommended to convert the pathogenqa table to wide format with multiple columns for controlType, then join by batchID.","",NA
+"rpt2_pathogentesting","mam_pertrapnight","Not fully automatable: pathogen testing results should be filtered to sampleIDs ending in either .E or .B and joined to mammal data via the earSampleID or via the bloodSampleID respectively.","Not fully automatable: pathogen testing results should be filtered to sampleIDs ending in either .E or .B and joined to mammal data via the earSampleID or via the bloodSampleID respectively.",NA
+"rpt2_pathogentesting","rpt2_pathogenqa","Simple join not recommended. BatchIDs used for joining are replicated in both tables such that joining tables results in repeated records.  It is recommended to convert the pathogenqa table to wide format with multiple columns for controlType, then join by batchID.","Simple join not recommended. BatchIDs used for joining are replicated in both tables such that joining tables results in repeated records.  It is recommended to convert the pathogenqa table to wide format with multiple columns for controlType, then join by batchID.",NA
 "mpr_perpitprofile","mpr_perdepthincrement","pitProfileID","pitProfileID",NA
 "mpr_perdepthincrement","mpr_perrootsample","depthIncrementID","depthIncrementID",NA
 "mpr_perrootsample","mpr_carbonNitrogen","sampleID","cnSampleID",NA
@@ -178,15 +184,15 @@
 "sls_soilCoreCollection","ntr_internalLab","sampleID","sampleID",NA
 "ntr_internalLab","ntr_externalLab","kclSampleID","kclSampleID",NA
 "ntr_externalLab","ntr_internalLabBlanks","Not fully automatable: kclSampleID in ntr_externalLab includes samples labeled as kclBlank1ID, kclBlank2ID, and kclBlank3ID in ntr_internalLabBlanks","Not fully automatable: kclSampleID in ntr_externalLab includes samples labeled as kclBlank1ID, kclBlank2ID, and kclBlank3ID in ntr_internalLabBlanks",NA
-"ntr_externalLab","sls_bgcSubsampling","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses",NA
+"ntr_externalLab","sls_bgcSubsampling","sampleID","sampleID",NA
 "ntr_externalLab","sls_metagenomicsPooling","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from genomic sequencing","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from genomic sequencing",NA
-"ntr_externalLab","sls_soilChemistry","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses",NA
+"ntr_externalLab","sls_soilChemistry","sampleID","sampleID",NA
 "ntr_externalLab","sls_soilCoreCollection","sampleID","sampleID",NA
 "ntr_externalLab","sls_soilMoisture","sampleID","sampleID",NA
 "ntr_externalLab","sls_soilpH","sampleID","sampleID",NA
-"ntr_internalLab","sls_bgcSubsampling","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses",NA
+"ntr_internalLab","sls_bgcSubsampling","sampleID","sampleID",NA
 "ntr_internalLab","sls_metagenomicsPooling","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from genomic sequencing","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from genomic sequencing",NA
-"ntr_internalLab","sls_soilChemistry","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses","Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses",NA
+"ntr_internalLab","sls_soilChemistry","sampleID","sampleID",NA
 "ntr_internalLab","sls_soilMoisture","sampleID","sampleID",NA
 "ntr_internalLab","sls_soilpH","sampleID","sampleID",NA
 "ntr_internalLabBlanks","sls_bgcSubsampling","Join not recommended: lab blanks are only relevant to nitrogen incubation samples","Join not recommended: lab blanks are only relevant to nitrogen incubation samples",NA
@@ -211,8 +217,8 @@
 "tck_pathogen","tck_taxonomyRaw","subsampleID","subsampleID",NA
 "tck_pathogen","tck_pathogenqa","Simple join not recommended. BatchIDs used for joining are replicated in both tables such that joining tables results in repeated records.  It is recommended to convert the pathogenqa table to wide format with multiple columns for controlType, then join by batchID.","Simple join not recommended. BatchIDs used for joining are replicated in both tables such that joining tables results in repeated records.  It is recommended to convert the pathogenqa table to wide format with multiple columns for controlType, then join by batchID.",NA
 "tck_fielddata","tck_taxonomyProcessed","sampleID","sampleID",NA
-"tck_fielddata","tck_taxonomyRaw","subsampleID","subsampleID",NA
-"tck_taxonomyProcessed","tck_taxonomyRaw","sampleID","sampleID",NA
+"tck_fielddata","tck_taxonomyRaw","sampleID","sampleID",NA
+"tck_taxonomyProcessed","tck_taxonomyRaw","Join not recommended. These tables contain identifications of the same samples with possibly differing higher-order taxonomy; see User Guide.","Join not recommended. These tables contain identifications of the same samples with possibly differing higher-order taxonomy; see User Guide.",NA
 "vst_perplotperyear","vst_mappingandtagging","Join not recommended: vst_perplotperyear and vst_mappingand tagging represent different temporal resolution","Join not recommended: vst_perplotperyear and vst_mappingand tagging represent different temporal resolution",NA
 "vst_mappingandtagging","vst_apparentindividual","individualID","individualID",NA
 "vst_perplotperyear","vst_apparentindividual","Join not recommended: vst_perplotperyear provides annual metadata at the plot level","Join not recommended: vst_perplotperyear provides annual metadata at the plot level",NA
@@ -223,6 +229,9 @@
 "vst_non-woody","vst_perplotperyear","Join not recommended: vst_perplotperyear provides annual metadata at the plot level","Join not recommended: vst_perplotperyear provides annual metadata at the plot level",NA
 "vst_non-woody","vst_apparentindividual","Join not recommended: vst_non-woody and vst_apparentindividual represent non-overlapping sets of plants","Join not recommended: vst_non-woody and vst_apparentindividual represent non-overlapping sets of plants",NA
 "vst_mappingandtagging","vst_non-woody","individualID","individualID",NA
+"vst_mappingandtagging","vst_identificationHistory","identificationHistoryID","identificationHistoryID",NA
+"sme_scaledMicrobialBiomass","sme_batchResults","batchID","batchID",NA
+"sme_scaledMicrobialBiomass","sls_soilCoreCollection","biomassID","biomassID",NA
 "sme_microbialBiomass","sme_batchResults","batchID","batchID",NA
 "sme_microbialBiomass","sls_soilCoreCollection","biomassID","biomassID",NA
 "sme_labSummary","Any other table","Join not recommended. Data resolution does not match other tables.","Join not recommended. Data resolution does not match other tables.",NA
@@ -250,8 +259,9 @@
 "mga_batchResults","mga_soilGroupAbundances","batchID","batchID",NA
 "mga_soilGroupAbundances","sls_soilCoreCollection","geneticSampleID","geneticSampleID",NA
 "mga_labSummary","Any other table","Join not recommended. Data resolution does not match other tables.","Join not recommended. Data resolution does not match other tables.",NA
-"dsc_fieldData","dsc_individualFieldData","recorduid","recorduid",NA
-"dsc_fieldDataADCP","Any other table","Join not recommended: ADCP data collection is carried out at river sites; individual discharge measurements are made at stream sites.","Join not recommended: ADCP data collection is carried out at river sites; individual discharge measurements are made at stream sites.",NA
+"dsc_fieldData","dsc_individualFieldData","Direct join not recommended: filter to dsc_fieldData:DischargeBoutTypeID equal to 'flowmeter' or 'flowmeter_rea', then join on namedLocation, collectDate","Direct join not recommended: filter to dsc_fieldData:DischargeBoutTypeID equal to 'flowmeter' or 'flowmeter_rea', then join on namedLocation, collectDate",NA
+"dsc_fieldData","dsc_fieldDataADCP","Direct join not recommended: filter to dsc_fieldData:DischargeBoutTypeID equal to 'adcp' or 'adcp_rea', then join on namedLocation, collectDate","Direct join not recommended: filter to dsc_fieldData:DischargeBoutTypeID equal to 'adcp' or 'adcp_rea', then join on namedLocation, collectDate",NA
+"dsc_fieldDataADCP","dsc_individualFieldData","Join not recommended: each table contains data for mutually exclusive discharge measurement methods","Join not recommended: each table contains data for mutually exclusive discharge measurement methods",NA
 "apl_clipHarvest","apl_biomass","fieldID","fieldID",NA
 "apl_clipHarvest","apl_plantExternalLabDataPerSample","Requires intermediate table: join via apl_biomass table","",NA
 "apl_biomass","apl_plantExternalLabDataPerSample","chemSubsampleID","sampleID",NA
@@ -534,11 +544,12 @@
 "fsp_sampleMetadata","fsp_spectralData","spectralSampleID","spectralSampleID",NA
 "fsp_boutMetadata","fsp_spectralData","Requires intermediate table: Join via fsp_sampleMetadata","Requires intermediate table: Join via fsp_sampleMetadata",NA
 "per_sample","Any other table","Join not recommended: spectralSampleID is the linking variable, but per_sample table contains data records for every wavelength measured. Note that this table will be named per_sample when stacking data using neonUtilities; in downloads from data portal, these data will be presented in individual files named for the sample they describe.","Join not recommended: spectralSampleID is the linking variable, but per_sample table contains data records for every wavelength measured. Note that this table will be named per_sample when stacking data using neonUtilities; in downloads from data portal, these data will be presented in individual files named for the sample they describe.",NA
-"csd_continuousDischarge","sdrc_stageDischargeCurveInfo","curveID","curveID",NA
-"csd_continuousDischarge","geo_gaugeWaterColumnRegression","regressionID","regressionID",NA
-"csd_continuousDischarge","bat_gaugeWaterColumnRegression","regressionID","regressionID",NA
-"sdrc_gaugePressureRelationship","geo_gaugeWaterColumnRegression","regressionID","regressionID",NA
-"sdrc_gaugePressureRelationship","bat_gaugeWaterColumnRegression","regressionID","regressionID",NA
+"csd_continuousDischarge","csd_gaugeWaterColumnRegression","regressionID","regressionID",NA
+"csd_continuousDischarge","sdrc_gaugePressureRelationship","Not fully automatable: Join by regressionID and endDate truncated to YYYY-MM-DD HH:MM (without seconds)","Not fully automatable: Join by regressionID and endDate truncated to YYYY-MM-DD HH:MM (without seconds)",NA
+"csd_continuousDischargeUSGS","csd_dischargeRegressionUSGS","usgsDischargeRegID","usgsDischargeRegID",NA
+"csd_continuousDischarge","csd_continuousDischargeUSGS","Join not recommended, see User Guide","Join not recommended, see User Guide",NA
+"csd_continuousDischarge","csd_dischargeRegressionUSGS","Join not recommended, see User Guide","Join not recommended, see User Guide",NA
+"csd_continuousDischargeUSGS","sdrc_gaugePressureRelationship","Join not recommended, see User Guide","Join not recommended, see User Guide",NA
 "geo_featureInfo","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
 "geo_mappedPointErrors","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
 "geo_missingLine","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
@@ -560,32 +571,20 @@
 "sdrc_posteriorParameters","sdrc_stageDischargeCurveInfo","curveID","curveID",NA
 "sdrc_posteriorParameters","sdrc_sampledParameters","curveID,controlNumber","curveID,controlNumber",NA
 "sdrc_posteriorParameters","sdrc_resultsResiduals","Join not recommended. Data can generally be related by curveID","",NA
-"sdrc_stageDischargeCurveInfo","geo_curveIdentification","curveID","curveID",NA
-"geo_curveIdentification","geo_controlInfo","controlSurveyEndDateTime","endDate",NA
-"geo_curveIdentification","geo_controlType","controlSurveyEndDateTime","endDate",NA
-"geo_curveIdentification","geo_priorParameters","controlSurveyEndDateTime","endDate",NA
+"sdrc_stageDischargeCurveInfo","sdrc_curveIdentification","curveID","curveID",NA
+"sdrc_curveIdentification","sdrc_controlInfo","controlSurveyEndDateTime","endDate",NA
+"sdrc_curveIdentification","sdrc_controlType","controlSurveyEndDateTime","endDate",NA
+"sdrc_curveIdentification","sdrc_priorParameters","controlSurveyEndDateTime","endDate",NA
 "sdrc_stageDischargeCurveInfo","bat_curveIdentification","curveID","curveID",NA
-"bat_curveIdentification","bat_controlInfo","controlSurveyEndDateTime","endDate",NA
-"bat_curveIdentification","bat_controlType","controlSurveyEndDateTime","endDate",NA
-"bat_curveIdentification","bat_priorParameters","controlSurveyEndDateTime","endDate",NA
-"geo_curveIdentification","sdrc_gaugeDischargeMeas","Join not recommended. Data can generally be related by curveID","",NA
-"geo_curveIdentification","sdrc_posteriorParameters","Join not recommended. Data can generally be related by curveID","",NA
-"geo_curveIdentification","sdrc_resultsResiduals","Join not recommended. Data can generally be related by curveID","",NA
-"geo_curveIdentification","sdrc_sampledParameters","Join not recommended. Data can generally be related by curveID","",NA
-"geo_curveIdentification","bat_curveIdentification","Join not recommended. Data are collected at mutually exclusive sites.","",NA
-"bat_curveIdentification","sdrc_gaugeDischargeMeas","Join not recommended. Data can generally be related by curveID","",NA
-"bat_curveIdentification","sdrc_posteriorParameters","Join not recommended. Data can generally be related by curveID","",NA
-"bat_curveIdentification","sdrc_resultsResiduals","Join not recommended. Data can generally be related by curveID","",NA
-"bat_curveIdentification","sdrc_sampledParameters","Join not recommended. Data can generally be related by curveID","",NA
+"sdrc_curveIdentification","sdrc_gaugeDischargeMeas","Join not recommended. Data can generally be related by curveID","",NA
+"sdrc_curveIdentification","sdrc_posteriorParameters","Join not recommended. Data can generally be related by curveID","",NA
+"sdrc_curveIdentification","sdrc_resultsResiduals","Join not recommended. Data can generally be related by curveID","",NA
+"sdrc_curveIdentification","sdrc_sampledParameters","Join not recommended. Data can generally be related by curveID","",NA
 "sdrc_gaugeDischargeMeas","sdrc_posteriorParameters","Join not recommended. Data can generally be related by curveID","",NA
 "sdrc_gaugeDischargeMeas","sdrc_sampledParameters","Join not recommended. Data can generally be related by curveID","",NA
 "sdrc_resultsResiduals","sdrc_sampledParameters","Join not recommended. Data can generally be related by curveID","",NA
 "sdrc_sampledParameters","sdrc_stageDischargeCurveInfo","Join not recommended. Data can generally be related by curveID","",NA
-"geo_controlInfo","Any other table","Join not recommended. Data can generally be related by site of sampling.","",NA
-"bat_AISsiteSurveyResultsFile","Any other table","Join not recommended. Data can generally be related by site of sampling.","",NA
-"geo_AISsiteSurveyResultsFile","Any other table","Join not recommended. Data can generally be related by site of sampling.","",NA
-"bat_controlInfo","Any other table than those above","Join not recommended. Data can generally be related by site of sampling.","",NA
-"bat_controlType","Any other table than those above","Join not recommended. Data can generally be related by and site of sampling.","",NA
-"bat_priorParameters","Any other table than those above","Join not recommended. Data can generally be related by site of sampling.","",NA
-"geo_controlType","Any other table than those above","Join not recommended. Data can generally be related by site of sampling.","",NA
-"geo_priorParameters","Any other table than those above","Join not recommended. Data can generally be related by site of sampling.","",NA
+"sdrc_controlInfo","Any other table","Join not recommended. Data can generally be related by site of sampling.","",NA
+"sdrc_controlType","Any other table than those above","Join not recommended. Data can generally be related by site of sampling.","",NA
+"sdrc_priorParameters","Any other table than those above","Join not recommended. Data can generally be related by site of sampling.","",NA
+"sdrc_AISsiteSurveyResultsFile","Any other table","Join not recommended. Data can generally be related by site of sampling.","",NA

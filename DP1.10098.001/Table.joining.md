@@ -10,3 +10,4 @@ vst_shrubgroup|vst_non-woody|Join not recommended: vst\_shrubgroup and vst\_non-
 vst_non-woody|vst_perplotperyear|Join not recommended: vst_perplotperyear provides annual metadata at the plot level
 vst_non-woody|vst_apparentindividual|Join not recommended: vst\_non-woody and vst\_apparentindividual represent non-overlapping sets of plants
 vst_mappingandtagging|vst_non-woody|individualID
+vst_mappingandtagging|vst_identificationHistory|identificationHistoryID

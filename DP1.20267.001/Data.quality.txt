@@ -1,1 +1,0 @@
-Gauge height is recorded at the beginning and end of the measurement period, to capture changes in water height during field activities. Various site conditions are also recorded; see variables file and User Guide for details.

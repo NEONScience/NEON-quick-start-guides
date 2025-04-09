@@ -2,9 +2,9 @@
 
 ### General instructions
 
-Quick Start Guides (QSGs) aim to be 1 page or less.  
+Quick Start Guides (QSGs) are knit automatically from the .txt and .md files in this repo. This means the file names and content are tightly constrained. The document sections listed below are the only ones allowed. If you have content that doesn't fit in one of those sections, consult the data product leads. If there is no relevant content for a particular section, omit the file.
 
-The QSGs must be simple documents to maximize the chance that they will be read by NEON data users. Links to other documents will be provided for users who want additional information.
+The QSGs must be simple documents to maximize the chance that they will be read by NEON data users. Links to other documents are provided for users who want additional information.
 
 Only include information that is essential to understand and use the data product. Examples of information that would typically NOT be considered essential are:
 
@@ -36,7 +36,7 @@ Calculations that users should expect to need to make to use the data. Examples:
 * Some tables in phenology (DP1.10055.001) contain an editedDate field; users should use only the most recently edited records.
 
 #### Table joining
-Relevant to data processed via the OS pipeline. A table of paired table names and the field(s) that provide a linking variable to join the tables. Used to inform the function joinTableNEON() in the neonOS R package. 
+Relevant to data processed via the OS pipeline. A table of paired table names and the field(s) that provide a linking variable to join the tables. Used to inform the function joinTableNEON() in the neonOS R package; this section is machine-read by the function, so the content is very rigid. See the table joining instructions document.
 
 #### References
 If relevant, list references cited in the QSG.

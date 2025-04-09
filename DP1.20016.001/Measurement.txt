@@ -1,1 +1,1 @@
-Surface water elevation in meters (m) above sea level defined by WGS84.
+Surface water elevation in meters (m) above sea level defined by WGS84 and surface water column height in meters (m) above the sensor.

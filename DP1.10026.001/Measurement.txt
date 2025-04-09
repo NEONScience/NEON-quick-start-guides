@@ -1,1 +1,1 @@
-Field metadata, leaf mass per area calculations, carbon, nitrogen, 13C, 15N, lignin, chlorophyll, and major/minor/trace element concentrations in sun lit foliage samples.
+Field metadata, leaf mass per area calculations, leaf water contentent, carbon, nitrogen, 13C, 15N, ‘lignin’ as quantified by the acid detergent method, chlorophyll, and major/minor/trace element concentrations in sun lit foliage samples.

@@ -132,7 +132,7 @@ validation: Description of data validation applied at the points of collection a
 
 {{if REPO.FILE [Standard.calculations] }}
 ## Standard calculations
-For wrapper functions to download data from the API, and functions to merge tabular data files across sites and months, see the [neonUtilities R package](https://cran.r-project.org/web/packages/neonUtilities/index.html).
+For wrapper functions to download data from the API, and functions to merge tabular data files across sites and months, NEON provides the neonUtilities package in R and the neonutilities package in Python. See the [Download and Explore NEON Data](https://www.neonscience.org/resources/learning-hub/tutorials/download-explore-neon-data) tutorial for introductory instructions in both programming languages.
 
 {{. Standard.calculations }}  
 {{end}}
@@ -152,6 +152,10 @@ For wrapper functions to download data from the API, and functions to merge tabu
 ## References
 {{. References }}  
 {{end}}
+
+## Contact Us
+NEON welcomes discussion with data users! Reach out with any questions or concerns about NEON data: [Contact Us](https://www.neonscience.org/about/contact-us)
+
 
 </article>
 </main>

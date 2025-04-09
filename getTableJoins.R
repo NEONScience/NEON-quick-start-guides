@@ -28,6 +28,21 @@ for(i in 1:length(dps)) {
     return(y)
   })
   l.names <- l[[1]]
+  
+  # check format of title rows
+  tl <- l[c(1:3)]
+  for(k in 1:2) {
+    if("placeholder" %in% tl[[k]]) {
+      tl[[k]] <- tl[[k]][-which(tl[[k]]=="placeholder")]
+    }
+  }
+  if(length(tl[[1]])!=length(tl[[2]])) {
+    print(paste("Bad header row for ", dps[i], sep=""))
+  }
+  if(length(tl[[1]])!=length(tl[[3]])) {
+    print(paste("Header does not match rows for ", dps[i], sep=""))
+  }
+  
   l <- l[-c(1,2)]
   
   # convert data to table form

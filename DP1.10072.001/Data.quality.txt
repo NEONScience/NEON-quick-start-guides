@@ -1,2 +1,4 @@
 The identificationQualifier field in the mam_pertrapnight table indicates any uncertainty in the taxonomic identification of an individual. The taxonomic specificity of the identification is indicated in the taxonRank field. Users are encouraged to check data for consistency of identification over multiple captures of the same individual, and observer effects can be evaluated using the measuredBy field.
 
+
+Please note that quality checks are comprehensive but not exhaustive; therefore, unknown data quality issues may exist. Users are advised to evaluate quality of the data as relevant to the scientific research question being addressed, perform data review and post-processing prior to analysis, and use the data quality information and issue logs included in download packages to aid interpretation.

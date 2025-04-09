@@ -1,3 +1,5 @@
 Sequence data are generated in batches of multiple samples, which are parsed into separate files on a per-sample basis. For bidirectional sequencing runs, 2 sequence files are created per sample, one for each sequencing read direction.
 
 Samples must achieve a minimum number of sequences of sufficient quality in order to pass QAQC. Samples must also pass QAQC checks during the various processing steps. Samples that do not meet these QAQC criteria will be noted as "Fail" in the qaqcStatus fields in the respective data tables, or may include additional quality flags.
+
+Please note that quality checks are comprehensive but not exhaustive; therefore, unknown data quality issues may exist. Users are advised to evaluate quality of the data as relevant to the scientific research question being addressed, perform data review and post-processing prior to analysis, and use the data quality information and issue logs included in download packages to aid interpretation.

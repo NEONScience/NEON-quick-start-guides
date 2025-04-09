@@ -1,1 +1,3 @@
 10% of algal taxonomy samples are quality checked by the taxonomist, indicated in qcTaxonomyStatus. Percent similarity (PSc) must be >85% and percent difference in enumeration (PDE) <5% to pass the minimum quality objectives, else data are reconciled.
+
+Please note that quality checks are comprehensive but not exhaustive; therefore, unknown data quality issues may exist. Users are advised to evaluate quality of the data as relevant to the scientific research question being addressed, perform data review and post-processing prior to analysis, and use the data quality information and issue logs included in download packages to aid interpretation.

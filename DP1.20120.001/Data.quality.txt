@@ -1,1 +1,3 @@
 Ten percent of all samples are quality checked for taxonomic difference and difference in enumeration between two taxonomists at the external facility. These records are indicated by the fields qcChecked, qcEnumerationDifference, and qcTaxonomicDifference, and data are corrected if necessary prior to return to NEON.
+
+Please note that quality checks are comprehensive but not exhaustive; therefore, unknown data quality issues may exist. Users are advised to evaluate quality of the data as relevant to the scientific research question being addressed, perform data review and post-processing prior to analysis, and use the data quality information and issue logs included in download packages to aid interpretation.

@@ -1,1 +1,1 @@
-Sensors are calibrated prior to installation at field sites and recalibrated on an annual basis. Water level sensors are only removed from their measurement location for maintenance on an as-needed basis to ensure data quality.
+Continuous discharge is derived from Elevation of surface water (DP1.20016.001), Discharge field collection (DP1.20048.001), Gauge height (DP1.20267.001), and Stage-discharge rating curves (DP4.00133.001). See documentation for those data products for sensor maintenance and calibration details.

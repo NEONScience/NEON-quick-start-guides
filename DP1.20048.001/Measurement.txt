@@ -1,1 +1,1 @@
-Staff gauge height and discharge data are measured at each stream site regularly throughout the water year. During each discharge measurement water depth (m) and velocity (L/s) are measured and associated with a gauge height.   
+Stage (a.k.a, staff gauge height; m) and discharge (L/s) data are measured at each stream, river, and lake inflow/outflow location regularly throughout the water year. For each method employed (flowmeter, ADCP), associated metadata and method-specific variables are published in addition to the primary stage and discharge data.

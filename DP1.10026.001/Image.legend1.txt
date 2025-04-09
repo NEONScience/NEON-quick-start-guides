@@ -1,1 +1,1 @@
-NEON base plot used for foliar sampling
+Sampling strategies used to collect sunlit foliage samples, depending on vegetation type. Left to right: mixed community clip strips, line launcher, uncrewed aerial sampler (drone + branch cutting tool).
