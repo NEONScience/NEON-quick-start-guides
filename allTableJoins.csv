@@ -175,6 +175,12 @@
 "mcc_soilTaxonTableMetadata_16S","mcc_soilTaxonTableMetadata_ITS","dnaSampleID","dnaSampleID",NA
 "mcc_taxonTableLabSummary","mcc_soilTaxonTableMetadata_16S","testMethod","testMethod",NA
 "mcc_taxonTableLabSummary","mcc_soilTaxonTableMetadata_ITS","testMethod","testMethod",NA
+"mct_soilSampleMetadata_ITS","mct_soilPerSampleTaxonomy_ITS","dnaSampleID","dnaSampleID",NA
+"mct_soilSampleMetadata_16S","mct_soilPerSampleTaxonomy_16S","dnaSampleID","dnaSampleID",NA
+"mct_taxonTableLabSummary","mct_soilSampleMetadata_ITS","codeVersion","codeVersion",NA
+"mct_taxonTableLabSummary","mct_soilSampleMetadata_16S","codeVersion","codeVersion",NA
+"sls_soilCoreCollection","mct_soilSampleMetadata_ITS","geneticSampleID","geneticSampleID",NA
+"sls_soilCoreCollection","mct_soilSampleMetadata_16S","geneticSampleID","geneticSampleID",NA
 "sls_soilCoreCollection","sls_soilMoisture","sampleID","sampleID",NA
 "sls_soilCoreCollection","sls_soilpH","sampleID","sampleID",NA
 "sls_soilCoreCollection","sls_bgcSubsampling","sampleID","sampleID",NA
@@ -289,6 +295,12 @@
 "mcc_benthicTaxonTableMetadata_16S","mcc_benthicTaxonTableMetadata_ITS","dnaSampleID","dnaSampleID",NA
 "mcc_taxonTableLabSummary","mcc_benthicTaxonTableMetadata_16S","testMethod","testMethod",NA
 "mcc_taxonTableLabSummary","mcc_benthicTaxonTableMetadata_ITS","testMethod","testMethod",NA
+"mct_benthicSampleMetadata_ITS","mct_benthicPerSampleTaxonomy_ITS","dnaSampleID","dnaSampleID",NA
+"mct_benthicSampleMetadata_16S","mct_benthicPerSampleTaxonomy_16S","dnaSampleID","dnaSampleID",NA
+"mct_taxonTableLabSummary","mct_benthicSampleMetadata_ITS","codeVersion","codeVersion",NA
+"mct_taxonTableLabSummary","mct_benthicSampleMetadata_16S","codeVersion","codeVersion",NA
+"amb_fieldParent","mct_benthicSampleMetadata_ITS","dnaSampleID","dnaSampleID",NA
+"amb_fieldParent","mct_benthicSampleMetadata_16S","dnaSampleID","dnaSampleID",NA
 "gwc_fieldSuperParent","gwc_fieldData","parentSampleID","parentSampleID",NA
 "gwc_fieldData","gwc_domainLabData","parentSampleID","parentSampleID",NA
 "gwc_fieldData","gwc_externalLabDataByAnalyte","Not fully automatable: sampleID in gwc_externalLabDataByAnalyte corresponds to filtSampleID, filtNutSampleID, rawSampleID, rawNutSampleID, pcnSampleID, and dicSampleID in gwc_fieldData","Not fully automatable: sampleID in gwc_externalLabDataByAnalyte corresponds to filtSampleID, filtNutSampleID, rawSampleID, rawNutSampleID, pcnSampleID, and dicSampleID in gwc_fieldData",NA
@@ -374,11 +386,22 @@
 "mcc_swTaxonTableMetadata_16S","mcc_swTaxonTableMetadata_ITS","dnaSampleID","dnaSampleID",NA
 "mcc_taxonTableLabSummary","mcc_swTaxonTableMetadata_16S","testMethod","testMethod",NA
 "mcc_taxonTableLabSummary","mcc_swTaxonTableMetadata_ITS","testMethod","testMethod",NA
+"mct_surfaceWaterSampleMetadata_ITS","mct_surfaceWaterPerSampleTaxonomy_ITS","dnaSampleID","dnaSampleID",NA
+"mct_surfaceWaterSampleMetadata_16S","mct_surfaceWaterPerSampleTaxonomy_16S","dnaSampleID","dnaSampleID",NA
+"mct_taxonTableLabSummary","mct_surfaceWaterSampleMetadata_ITS","codeVersion","codeVersion",NA
+"mct_taxonTableLabSummary","mct_surfaceWaterSampleMetadata_16S","codeVersion","codeVersion",NA
+"amc_fieldGenetic","mct_surfaceWaterSampleMetadata_ITS","geneticSampleID","geneticSampleID",NA
+"amc_fieldGenetic","mct_surfaceWaterSampleMetadata_16S","geneticSampleID","geneticSampleID",NA
 "alg_fieldData","alg_domainLabChemistry","parentSampleID","parentSampleID",NA
-"alg_domainLabChemistry","alg_algaeExternalLabDataPerSample","sampleID","sampleID",NA
-"alg_algaeExternalLabDataPerSample","alg_fieldData","Requires intermediate table: join via alg_domainLabChemistry table","Requires intermediate table: join via alg_domainLabChemistry table",NA
-"alg_algaeExternalLabDataPerSample","alg_algaeExternalLabQA","Join not recommended. Users interested in data quality can join by batchID, analyte, this will create a longer table that includes blanks and standards.","Join not recommended. Users interested in data quality can join by batchID, analyte, this will create a longer table that includes blanks and standards.",NA
-"asi_externalLabPOMSummaryData","Any other table","Join not recommended. Quality control data can be connected to analyses by laboratoryName, analyte, and overlap of analysisDate with lab-specific start and end dates.","Join not recommended. Quality control data can be connected to analyses by laboratoryName, analyte, and overlap of analysisDate with lab-specific start and end dates.",NA
+"alg_algaeExternalLabDataPerSample","alg_domainLabChemistry","sampleID,sampleType,replicate","sampleID,analysisType,filterNumber",NA
+"alg_algaeExternalLabDataPerSample","alg_fieldData","Requires intermediate table: join via alg_domainLabChemistry table","",NA
+"alg_algaeExternalLabDataPerSample","alg_algaeExternalLabQA","Join not recommended. Users interested in data quality can join by batchID, analyte, this will create a longer table that includes blanks and standards.","",NA
+"alg_fieldData","alg_domainLabChemistryComp","compositeSampleID","compositeSampleID",NA
+"alg_algaeDataPerSampleCompChl","alg_domainLabChemistryComp","sampleID","analyteSampleID",NA
+"alg_algaeDataPerSampleCompCNPS","alg_domainLabChemistryComp","sampleID","analyteSampleID",NA
+"alg_algaeDataPerSampleCompChl","alg_algaeExternalLabQA","Join not recommended. Users interested in data quality can join by batchID, analyte, this will create a longer table that includes blanks and standards.","",NA
+"alg_algaeDataPerSampleCompCNPS","alg_algaeExternalLabQA","Join not recommended. Users interested in data quality can join by batchID, analyte, this will create a longer table that includes blanks and standards.","",NA
+"asi_externalLabPOMSummaryData","Any other table","Join not recommended. Quality control data can be connected to analyses by laboratoryName, analyte, and overlap of analysisDate with lab-specific start and end dates.","",NA
 "alg_fieldData","alg_biomass","parentSampleID","parentSampleID",NA
 "alg_biomass","alg_taxonomyProcessed","sampleID","sampleID",NA
 "alg_biomass","alg_taxonomyRaw","sampleID","sampleID",NA
@@ -545,8 +568,14 @@
 "fsp_boutMetadata","fsp_spectralData","Requires intermediate table: Join via fsp_sampleMetadata","Requires intermediate table: Join via fsp_sampleMetadata",NA
 "per_sample","Any other table","Join not recommended: spectralSampleID is the linking variable, but per_sample table contains data records for every wavelength measured. Note that this table will be named per_sample when stacking data using neonUtilities; in downloads from data portal, these data will be presented in individual files named for the sample they describe.","Join not recommended: spectralSampleID is the linking variable, but per_sample table contains data records for every wavelength measured. Note that this table will be named per_sample when stacking data using neonUtilities; in downloads from data portal, these data will be presented in individual files named for the sample they describe.",NA
 "csd_continuousDischarge","csd_gaugeWaterColumnRegression","regressionID","regressionID",NA
-"csd_continuousDischarge","sdrc_gaugePressureRelationship","Not fully automatable: Join by regressionID and endDate truncated to YYYY-MM-DD HH:MM (without seconds)","Not fully automatable: Join by regressionID and endDate truncated to YYYY-MM-DD HH:MM (without seconds)",NA
 "csd_continuousDischargeUSGS","csd_dischargeRegressionUSGS","usgsDischargeRegID","usgsDischargeRegID",NA
+"csd_dataGapToFillMethodMapping","csd_gapFillingRegression","gapFillRegressionID","gapFillRegressionID",NA
+"csd_continuousDischarge","sdrc_gaugePressureRelationship","Not fully automatable: Join by regressionID and endDate truncated to YYYY-MM-DD HH:MM (without seconds)","Not fully automatable: Join by regressionID and endDate truncated to YYYY-MM-DD HH:MM (without seconds)",NA
+"csd_continuousDischarge","csd_dataGapToFillMethodMapping","Not fully automatable: Join by csd_continuousDischarge:endDate overlapping with date range of records in csd_dataGapToFillMethodMapping","Not fully automatable: Join by csd_continuousDischarge:endDate overlapping with date range of records in csd_dataGapToFillMethodMapping",NA
+"csd_continuousDischarge","csd_constantBiasShift","Not fully automatable: Join by csd_continuousDischarge:endDate overlapping with date range of records in csd_constantBiasShift","Not fully automatable: Join by csd_continuousDischarge:endDate overlapping with date range of records in csd_constantBiasShift",NA
+"csd_continuousDischarge","csd_gapFillingRegression","Not fully automatable: Join by csd_continuousDischarge:endDate overlapping with date range of records in csd_gapFillingRegression","Not fully automatable: Join by csd_continuousDischarge:endDate overlapping with date range of records in csd_gapFillingRegression",NA
+"csd_dataGapToFillMethodMapping","csd_constantBiasShift","Join not recommended, see User Guide","Join not recommended, see User Guide",NA
+"csd_gapFillingRegression","csd_constantBiasShift","Join not recommended, see User Guide","Join not recommended, see User Guide",NA
 "csd_continuousDischarge","csd_continuousDischargeUSGS","Join not recommended, see User Guide","Join not recommended, see User Guide",NA
 "csd_continuousDischarge","csd_dischargeRegressionUSGS","Join not recommended, see User Guide","Join not recommended, see User Guide",NA
 "csd_continuousDischargeUSGS","sdrc_gaugePressureRelationship","Join not recommended, see User Guide","Join not recommended, see User Guide",NA
