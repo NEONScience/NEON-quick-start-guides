@@ -579,15 +579,126 @@
 "csd_continuousDischarge","csd_continuousDischargeUSGS","Join not recommended, see User Guide","Join not recommended, see User Guide",NA
 "csd_continuousDischarge","csd_dischargeRegressionUSGS","Join not recommended, see User Guide","Join not recommended, see User Guide",NA
 "csd_continuousDischargeUSGS","sdrc_gaugePressureRelationship","Join not recommended, see User Guide","Join not recommended, see User Guide",NA
-"geo_featureInfo","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
-"geo_mappedPointErrors","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
-"geo_missingLine","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
-"geo_pebbleCount","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
-"geo_pebbleFieldData","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
-"geo_rapidHabitatResultsFile","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
-"geo_resultsFile","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
-"geo_surveyFieldData","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
-"geo_totalStation","Any other table","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)","Not fully automatable: Join by siteID and endDate truncated to YYYY-MM (without day or time)",NA
+"geo_misclosureInfo","geo_surveySummary","eventID,surveyEndDate","eventID,surveyEndDate",NA
+"geo_missingLine","geo_surveySummary","eventID,surveyEndDate","eventID,surveyEndDate",NA
+"geo_pebbleCount","geo_pebbleFieldData","eventID,surveyEndDate","eventID,surveyEndDate",NA
+"geo_pebbleCount","geo_surveySummary","eventID,surveyEndDate","eventID,surveyEndDate",NA
+"geo_pebbleFieldData","geo_surveySummary","eventID,surveyEndDate","eventID,surveyEndDate",NA
+"geo_rapidHabitatAssessment","geo_surveySummary","eventID,surveyEndDate","eventID,surveyEndDate",NA
+"geo_rawSurveyData","geo_surveyPoints","eventID,surveyEndDate,surveyPointID","eventID,surveyEndDate,surveyPointID",NA
+"geo_surveySummary","geo_thalwegByHabitatID","eventID,surveyEndDate","eventID,surveyEndDate",NA
+"geo_surveySummary","geo_thalwegByHabitatType","eventID,surveyEndDate","eventID,surveyEndDate",NA
+"geo_surveySummary","geo_thalwegLongProfile","eventID,surveyEndDate","eventID,surveyEndDate",NA
+"geo_surveySummary","geo_trimbleData","eventID,surveyEndDate","eventID,surveyEndDate",NA
+"geo_misclosureInfo","geo_missingLine","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_pebbleCount","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_pebbleFieldData","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_totalStation","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_geomorphicFeatureCount","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_processedSurveyData","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_rapidHabitatAssessment","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_rawSurveyData","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_surveyPoints","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_thalwegByHabitatID","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_thalwegByHabitatType","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_misclosureInfo","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_pebbleCount","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_pebbleFieldData","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_totalStation","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_geomorphicFeatureCount","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_processedSurveyData","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_rapidHabitatAssessment","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_rawSurveyData","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_surveyPoints","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_thalwegByHabitatID","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_thalwegByHabitatType","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_missingLine","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_pebbleCount","geo_totalStation","Join not recommended","Join not recommended",NA
+"geo_pebbleCount","geo_geomorphicFeatureCount","Join not recommended","Join not recommended",NA
+"geo_pebbleCount","geo_processedSurveyData","Join not recommended","Join not recommended",NA
+"geo_pebbleCount","geo_rapidHabitatAssessment","Join not recommended","Join not recommended",NA
+"geo_pebbleCount","geo_rawSurveyData","Join not recommended","Join not recommended",NA
+"geo_pebbleCount","geo_surveyPoints","Join not recommended","Join not recommended",NA
+"geo_pebbleCount","geo_thalwegByHabitatID","Join not recommended","Join not recommended",NA
+"geo_pebbleCount","geo_thalwegByHabitatType","Join not recommended","Join not recommended",NA
+"geo_pebbleCount","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_pebbleCount","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_pebbleCount","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_totalStation","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_geomorphicFeatureCount","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_processedSurveyData","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_rapidHabitatAssessment","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_rawSurveyData","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_surveyPoints","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_thalwegByHabitatID","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_thalwegByHabitatType","Join not recommended","Join not recommended",NA
+"geo_processedSurveyData","geo_thalwegByHabitatID","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_processedSurveyData","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_totalStation","geo_geomorphicFeatureCount","Join not recommended","Join not recommended",NA
+"geo_processedSurveyData","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_totalStation","geo_rapidHabitatAssessment","Join not recommended","Join not recommended",NA
+"geo_rapidHabitatAssessment","geo_surveyPoints","Join not recommended","Join not recommended",NA
+"geo_totalStation","geo_surveyPoints","Join not recommended","Join not recommended",NA
+"geo_rapidHabitatAssessment","geo_thalwegByHabitatType","Join not recommended","Join not recommended",NA
+"geo_totalStation","geo_thalwegByHabitatID","Join not recommended","Join not recommended",NA
+"geo_rapidHabitatAssessment","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_totalStation","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_rawSurveyData","geo_thalwegByHabitatID","Join not recommended","Join not recommended",NA
+"geo_totalStation","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_rawSurveyData","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_thalwegByHabitatID","Join not recommended","Join not recommended",NA
+"geo_rawSurveyData","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_thalwegByHabitatType","Join not recommended","Join not recommended",NA
+"geo_rawSurveyData","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_surveyPoints","geo_thalwegByHabitatID","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_surveyPoints","geo_thalwegByHabitatType","Join not recommended","Join not recommended",NA
+"geo_pebbleFieldData","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_surveyPoints","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_totalStation","geo_geomorphicFeatureCount","Join not recommended","Join not recommended",NA
+"geo_surveyPoints","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_totalStation","geo_processedSurveyData","Join not recommended","Join not recommended",NA
+"geo_surveyPoints","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_totalStation","geo_rapidHabitatAssessment","Join not recommended","Join not recommended",NA
+"geo_surveySummary","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_totalStation","geo_rawSurveyData","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatID","geo_thalwegByHabitatType","Join not recommended","Join not recommended",NA
+"geo_totalStation","geo_surveyPoints","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatID","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatID","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_rapidHabitatAssessment","geo_thalwegByHabitatType","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatID","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_rapidHabitatAssessment","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatType","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatType","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_rawSurveyData","geo_thalwegByHabitatID","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatType","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_rawSurveyData","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_thalwegLongProfile","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_rawSurveyData","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_thalwegLongProfile","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_surveyPoints","geo_thalwegByHabitatID","Join not recommended","Join not recommended",NA
+"geo_transectBankfullWidths","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_surveyPoints","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_surveyPoints","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_surveyPoints","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_surveySummary","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatID","geo_thalwegByHabitatType","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatID","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatID","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatID","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatType","geo_thalwegLongProfile","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatType","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_thalwegByHabitatType","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_thalwegLongProfile","geo_transectBankfullWidths","Join not recommended","Join not recommended",NA
+"geo_thalwegLongProfile","geo_trimbleData","Join not recommended","Join not recommended",NA
+"geo_transectBankfullWidths","geo_trimbleData","Join not recommended","Join not recommended",NA
 "bat_fieldData","bat_pointcollection","endDate","endDate",NA
 "bat_fieldData","bat_sonarRecord","endDate","endDate",NA
 "bat_fieldData","bat_resultsFile","Join not recommended, see Standard Calculations","Join not recommended, see Standard Calculations",NA
