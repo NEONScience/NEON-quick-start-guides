@@ -1,1 +1,3 @@
 Data quality information associated with sample collection can be found in the wdp_collection and wdp_collectionChem tables, in the equipmentProblems and chemSubsampleCondition fields. In the wdp_chemLab table there are flags indicating any measurement/detection issues encountered by the external lab. 
+
+Please note that quality checks are comprehensive but not exhaustive; therefore, unknown data quality issues may exist. Users are advised to evaluate quality of the data as relevant to the scientific research question being addressed, perform data review and post-processing prior to analysis, and use the data quality information and issue logs included in download packages to aid interpretation.

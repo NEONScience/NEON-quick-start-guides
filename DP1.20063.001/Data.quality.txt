@@ -1,1 +1,3 @@
 A subset of samples are analyzed in replicate for quality control, as indicated by the "replicate" field in the apl_plantExternalLabDataPerSample table. The apl_plantExternalLabQA and asi_externalLabPOMSummaryData tables provide laboratory quality data, including batch-level performance data and the outcomes of standard reference material analyzed as unknowns.
+
+Please note that quality checks are comprehensive but not exhaustive; therefore, unknown data quality issues may exist. Users are advised to evaluate quality of the data as relevant to the scientific research question being addressed, perform data review and post-processing prior to analysis, and use the data quality information and issue logs included in download packages to aid interpretation.

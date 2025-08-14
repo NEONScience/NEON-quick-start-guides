@@ -1,1 +1,3 @@
 Metadata about the location of and conditions during sampling can be found in the dep_profileHeader table. The dataQF field in each table documents any unexpected data quality problems identified after the fact.
+
+Please note that quality checks are comprehensive but not exhaustive; therefore, unknown data quality issues may exist. Users are advised to evaluate quality of the data as relevant to the scientific research question being addressed, perform data review and post-processing prior to analysis, and use the data quality information and issue logs included in download packages to aid interpretation.
