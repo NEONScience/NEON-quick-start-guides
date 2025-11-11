@@ -34,21 +34,11 @@
         }
     </style>
     <style neon-qsg-standalone-html-remove>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-        }
         header {
             position: running(neon-header);
         }
         footer {
             position: running(neon-footer);
-        }
-        table,
-        div.pdf-ua-display-as-table {
-            -fs-table-paginate: paginate;
-            margin-left: 1px;
-            margin-right: 1px;
         }
     </style>
 </head>
@@ -103,6 +93,8 @@
 ## Collection methodology
 {{. Collection.methodology }}
 
+For information about disturbances, land management activities, and other incidents that may impact data at NEON sites, see the [Site management and event reporting (DP1.10111.001)](https://data.neonscience.org/data-products/DP1.10111.001) data product.
+
 {{if REPO.FILE [Maintenance.and.calibration] }}
 ## Maintenance and calibration
 {{. Maintenance.and.calibration }}  
@@ -140,6 +132,8 @@ validation: Description of data validation applied at the points of collection a
 
 {{if REPO.FILE [Standard.calculations] }}
 ## Standard calculations
+For wrapper functions to download data from the API, and functions to merge tabular data files across sites and months, NEON provides the neonUtilities package in R and the neonutilities package in Python. See the [Download and Explore NEON Data](https://www.neonscience.org/resources/learning-hub/tutorials/download-explore-neon-data) tutorial for introductory instructions in both programming languages.
+
 {{. Standard.calculations }}  
 {{end}}
 
@@ -158,6 +152,10 @@ validation: Description of data validation applied at the points of collection a
 ## References
 {{. References }}  
 {{end}}
+
+## Contact Us
+NEON welcomes discussion with data users! Reach out with any questions or concerns about NEON data: [Contact Us](https://www.neonscience.org/about/contact-us)
+
 
 </article>
 </main>

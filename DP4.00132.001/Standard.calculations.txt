@@ -1,1 +1,1 @@
-
+Sonar data (L0 data files) along with bathymetry shapefiles and other calculated metrics (L4 data files) can be retrieved using the URIs in the bat_resultsFile table. These data aren't easily joined automatically and users should use siteID and year to match field data with raw and processed data files.

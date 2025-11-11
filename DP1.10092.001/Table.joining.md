@@ -1,5 +1,5 @@
-|Table 1|Table 2|Join by field(s)|Notes|
-|-------------------|-------------------|--------------------|-------------------|
-tck_pathogen|tck_taxonomyProcessed|subsampleID||
-tck_pathogen|tck_taxonomyRaw|subsampleID||
-tck_pathogen|tck_pathogenqa|batchID|batchID can only be used to join these tables for data collected after 2021-01-01. Prior to that date, batchID does not uniquely correspond to specific samples.|
+|Table 1|Table 2|Join by field(s)|
+|-------------------|-------------------|--------------------|
+tck_pathogen|tck_taxonomyProcessed|subsampleID|
+tck_pathogen|tck_taxonomyRaw|subsampleID|
+tck_pathogen|tck_pathogenqa|Simple join not recommended. BatchIDs used for joining are replicated in both tables such that joining tables results in repeated records.  It is recommended to convert the pathogenqa table to wide format with multiple columns for controlType, then join by batchID.|

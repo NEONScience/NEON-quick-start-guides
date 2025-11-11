@@ -1,0 +1,1 @@
+Analytical replicates, indicated by the field analyticalRepNumber, should typically be averaged to determine a single value per sample per analyte, before proceeding with further analyses. Additionally, if carbon and nitrogen were analyzed separately (co2Trapped = N and Y respectively), users may wish to combine these values first before joining to other tables.

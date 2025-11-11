@@ -1,1 +1,3 @@
 The expanded data package for this data product includes a summary file (sdg_externalLabSummaryData) of the external facilities method detection limits, precision, and uncertainty for each analyte. The sdg_externalLabData table contains individual run detection limits and precision metrics.
+
+Please note that quality checks are comprehensive but not exhaustive; therefore, unknown data quality issues may exist. Users are advised to evaluate quality of the data as relevant to the scientific research question being addressed, perform data review and post-processing prior to analysis, and use the data quality information and issue logs included in download packages to aid interpretation.

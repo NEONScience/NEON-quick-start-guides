@@ -1,2 +1,2 @@
-Stream discharge, the volumetric rate of water that flows through a stream at a given location, in liters per second, at 1 minute resolution.
+Continuous discharge, the volumetric rate of water flowing through a stream at a given location, in liters per second, reported at 1 minute resolution.
   

@@ -1,2 +1,1 @@
 Note that data in the gwc_externalLabDataByAnalyte table are reported in long format, with one record for each combination of sample and analyte.
-

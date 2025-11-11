@@ -1,1 +1,1 @@
-Representation of a NEON base plot. Soil sampling occurs within the outer region of a 40 x 40 m base plot to avoid disturbing plant sampling activities in the inner plot area.
+Representation of a NEON base plot used for soil sampling. Soil sampling occurs within the outer region of a 40 x 40 m base plot to avoid disturbing plant sampling activities in the inner plot area. Unique, random X,Y sampling locations in 0.5 m increments according to a linear grid are sampled, one each in three of the four subplots per bout (for example, 21_400, 39_400, and 23_400).

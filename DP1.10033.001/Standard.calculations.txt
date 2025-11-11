@@ -1,3 +1,3 @@
-Analytical replicates, indicated by the qaDryMass and analyticalRepNumber fields, should typically be averaged to a single value before proceeding with further analyses.
+Analytical replicates, indicated by the qaDryMass and analyticalRepNumber fields, should typically be averaged to a single value before proceeding with further analyses. Additionally, if litter carbon and nitrogen were analyzed separately (co2Trapped = N and Y respectively), users may wish to combine these values first before joining to other tables.
 
 Litter production per unit area per unit time can be estimated by summing the masses of all functional groups per trap over the desired period of time, and dividing by the collection area of the trap.

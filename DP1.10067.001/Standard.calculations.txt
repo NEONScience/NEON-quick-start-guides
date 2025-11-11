@@ -4,13 +4,15 @@ Using the bbc_rootmass table, fine root biomass across size categories for roots
 
 Note: If one is interested in fine root biomass within size categories, prior to May 2019 the following categories were employed: 0-0.5 mm, 0.5-1 mm, 1-2 mm, and 2-10 mm; after May 2019, the 0-0.5 mm and 0.5-1 mm categories were combined into a single 0-1 mm size category. In addition, after May 2019 roots were no longer sorted by rootStatus into live/dead pools.
 
-Using the bbc_dilution table, the next step is to calculate the mass of fine root fragments <= 1 cm length, then add this fragment mass to the mass already calculated across size categories from the bbc_rootmass table. In the bbc_dilution table, up to n=10 dilutionSubsampleID replicates are created per sampleID in order to quantify the biomass of fine root fragments < 1 cm length within the sampleID. First, the fragment dry mass is calculated for each dilutionSubsampleID replicate:
+Using the bbc_dilution table, the next step is to calculate the mass of fine root fragments <= 1 cm length, then add this fragment mass to the mass already calculated across size categories from the bbc_rootmass table. In the bbc_dilution table, up to n=10 dilutionSubsampleID replicates (pre-August 2023) or up to n=3 dilutionSubsampleID replicates (post-August 2023) are created per sampleID in order to quantify the biomass of fine root fragments < 1 cm length within the sampleID. First, the fragment dry mass is calculated for each dilutionSubsampleID replicate:
 
 fragmentSubsampleDryMass = dryMass * (sampleVolume/dilutionSubsampleVolume)
 
 Then, group the data by sampleID and calculate the fragmentDryMass for the sampleID as the mean of the replicate fragmentSubsampleDryMass values. Next, use the sampleID to join the fragmentDryMass values to the sumSizeCatDryMass values by sampleID and then sum sumSizeCatDryMass and fragmentDryMass values for total mass for each sampleID. 
 
 Once the fine root mass calculated from the bbc_rootmass and bbc_dilution tables have been summed for each sampleID, the last step is to join with bbc_percore data in order to scale to either root mass per unit area or root mass density. Once again, join the calculated total fine root biomass to the bbc_percore table using the sampleID, and then utilize 'rootSampleArea' and 'rootSampleDepth' columns as needed in order to appropriately scale the root mass data. Note that 'rootSampleArea' is reported in m^2 and 'rootSampleDepth' is reported in centimeters.
+
+For the carbon and nitrogen data, analytical replicates (indicated by the field analyticalRepNumber )should typically be averaged to determine a single value per sample per analyte, before joining to other tables. Additionally, if carbon and nitrogen were analyzed separately (co2Trapped = N and Y respectively), users may wish to combine these values first before joining to other tables.
 
 
 

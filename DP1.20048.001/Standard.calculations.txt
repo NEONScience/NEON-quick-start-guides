@@ -1,2 +1,2 @@
-Stage-discharge rating curves (DP4.00133.001) are calculated using this data product, and Continuous discharge (DP4.00130.001) is calculated using the rating curves in combination with Elevation of surface water (DP1.20016.001). For users who prefer to calculate rating curves and continuous discharge using alternatives to NEON's algorithm, this data product contains the raw data needed as input. Refer to the ATBDs for details about NEON's algorithm and processing workflow.
+
  

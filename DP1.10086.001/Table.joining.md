@@ -9,15 +9,15 @@ ntr_internalLab|ntr_internalLabBlanks|kclReferenceID
 sls_soilCoreCollection|ntr_internalLab|sampleID
 ntr_internalLab|ntr_externalLab|kclSampleID
 ntr_externalLab|ntr_internalLabBlanks|Not fully automatable: kclSampleID in ntr\_externalLab includes samples labeled as kclBlank1ID, kclBlank2ID, and kclBlank3ID in ntr\_internalLabBlanks
-ntr_externalLab|sls_bgcSubsampling|Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses
+ntr_externalLab|sls_bgcSubsampling|sampleID
 ntr_externalLab|sls_metagenomicsPooling|Direct join not recommended: nitrogen incubations are carried out on a different set of samples from genomic sequencing
-ntr_externalLab|sls_soilChemistry|Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses
+ntr_externalLab|sls_soilChemistry|sampleID
 ntr_externalLab|sls_soilCoreCollection|sampleID
 ntr_externalLab|sls_soilMoisture|sampleID
 ntr_externalLab|sls_soilpH|sampleID
-ntr_internalLab|sls_bgcSubsampling|Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses
+ntr_internalLab|sls_bgcSubsampling|sampleID
 ntr_internalLab|sls_metagenomicsPooling|Direct join not recommended: nitrogen incubations are carried out on a different set of samples from genomic sequencing
-ntr_internalLab|sls_soilChemistry|Direct join not recommended: nitrogen incubations are carried out on a different set of samples from other chemical analyses
+ntr_internalLab|sls_soilChemistry|sampleID
 ntr_internalLab|sls_soilMoisture|sampleID
 ntr_internalLab|sls_soilpH|sampleID
 ntr_internalLabBlanks|sls_bgcSubsampling|Join not recommended: lab blanks are only relevant to nitrogen incubation samples

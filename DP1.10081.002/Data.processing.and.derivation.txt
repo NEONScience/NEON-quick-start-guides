@@ -1,0 +1,1 @@
+Samples are shipped to an analytical laboratory where DNA extraction, sample library preparation and DNA sequencing of 16S and ITS marker genes occurs. See DP1.10108.001 for the raw marker gene sequence data. Sequence data are then quality-filtered and processed via a custom pipeline utilizing standard tools (Dada2, VSearch) to generate taxonomic classification tables.

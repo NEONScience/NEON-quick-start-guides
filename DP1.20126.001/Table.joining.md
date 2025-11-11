@@ -16,7 +16,7 @@ inv_fieldData|inv_markerGeneSequencing|Requires intermediate table: join via inv
 inv_fieldData|inv_metabarcodeTaxonomy|Requires intermediate table: join via inv_dnaExtraction table
 inv_fieldData|inv_pcrAmplification|Requires intermediate table: join via inv_dnaExtraction table
 inv_markerGeneSequencing|inv_metabarcodeTaxonomy|Join not recommended. Data resolution does not match other tables.
-inv_markerGeneSequencing|inv_pcrAmplification|dnaSampleID
+inv_markerGeneSequencing|inv_pcrAmplification|dnaSampleID,primerSetID
 inv_metabarcodeTaxonomy|inv_pcrAmplification|Join not recommended. Data resolution does not match other tables.
 inv_dnaExtractionStandard|Any other table|Join not recommended. Data resolution does not match other tables.
 inv_dnaRawDataFilesStandard|Any other table|Join not recommended. Data resolution does not match other tables.

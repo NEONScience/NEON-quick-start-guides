@@ -1,0 +1,1 @@
+Samples are collected and sub-sampled in the field by horizon type (organic and mineral) to a maximum depth of 30 cm. Samples are frozen on dry ice in the field and stored in -80 freezers until they are shipped to an external laboratory for sequencing. See User Guides, protocol, and/or quick start guide to DP1.10086.001 for further details about field sampling.

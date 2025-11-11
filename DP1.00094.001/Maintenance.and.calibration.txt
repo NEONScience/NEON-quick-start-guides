@@ -1,1 +1,1 @@
-Preventative maintenance is limited to aboveground components and typically performed every 2 weeks. Calibrations are performed annually.
+Preventative maintenance is limited to aboveground components and typically performed every 2 weeks. Calibrations were initially performed annually, but have since been discontinued consistent with manufacturer recommendations and to minimize sensor damage during shipping and handling.
