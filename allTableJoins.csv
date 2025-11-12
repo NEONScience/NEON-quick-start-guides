@@ -112,7 +112,7 @@
 "mos_expertTaxonomistIDRaw","mos_archivepooling","Requires intermediate table: join via mos_subsampling table","Requires intermediate table: join via mos_subsampling table",NA
 "mos_archivepooling","mos_barcoding","Full join not recommended: tables not related","Full join not recommended: tables not related",NA
 "mos_archivepooling","mos_sorting","Requires intermediate table: join via mos_sorting table and mos_expertTaxonomistID table (either Processed or Raw) and mos_subsampling table","Requires intermediate table: join via mos_sorting table and mos_expertTaxonomistID table (either Processed or Raw) and mos_subsampling table",NA
-"mos_archivepooling","mos_subsampling","archiveID","archiveID",NA
+"mos_archivepooling","mos_subsampling","poolSampleID","poolSampleID",NA
 "mos_archivepooling","mos_trapping","Requires intermediate table: join via mos_sorting and  mos_expertTaxonomistID table (either Processed or Raw) and mos_subsampling tables","Requires intermediate table: join via mos_sorting and  mos_expertTaxonomistID table (either Processed or Raw) and mos_subsampling tables",NA
 "mos_barcoding","mos_expertTaxonomistIDProcessed","Not fully automatable: multiple individualIDs pooled into each individualIDList","Not fully automatable: multiple individualIDs pooled into each individualIDList",NA
 "mos_barcoding","mos_expertTaxonomistIDRaw","Not fully automatable: multiple individualIDs pooled into each individualIDList","Not fully automatable: multiple individualIDs pooled into each individualIDList",NA
