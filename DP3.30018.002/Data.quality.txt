@@ -1,0 +1,11 @@
+Canopy nitrogen (%) maps are provided as 1 x 1 km geotiff (.tif) files and include the following additional layers:
+
+a) Canopy nitrogen model uncertainty showing the uncertainty associated with the %N predictions from each decision tree in the final random forest model for each 1 m pixel within the tile.
+
+b) Classification result for needle vs non-needle model, which is a binary map generated using SVM classification, where needle types are coded as 0 and non-needle types as 1 for each 1 m pixel within the tile.
+
+c) NDVI mask to exclude non-vegetated areas, such as roads, water bodies, built-up areas, and bare rock.
+
+Pixels with missing data are coded -9999.
+
+Please note that quality checks are comprehensive but not exhaustive; therefore, unknown data quality issues may exist. Users are advised to evaluate quality of the data as relevant to the scientific research question being addressed, perform data review and post-processing prior to analysis, and use the data quality information and issue logs included in download packages to aid interpretation.
