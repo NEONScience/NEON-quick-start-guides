@@ -350,10 +350,6 @@
 "inv_fieldData","inv_taxonomyRaw","sampleID","sampleID",NA
 "inv_fieldData","inv_taxonomyProcessed","sampleID","sampleID",NA
 "inv_taxonomyRaw","inv_taxonomyProcessed","Join not recommended. If interested in processed NEON vs. raw lab taxonomy, join by sampleID + scientificName + sizeClass.","Join not recommended. If interested in processed NEON vs. raw lab taxonomy, join by sampleID + scientificName + sizeClass.",NA
-"inv_fieldData","inv_pervial","sampleID","sampleID",NA
-"inv_persample","inv_pervial","sampleID","sampleID",NA
-"inv_taxonomyRaw","inv_pervial","Join not recommended. Data resolution does not match other tables.","Join not recommended. Data resolution does not match other tables.",NA
-"inv_taxonomyProcessed","inv_pervial","Join not recommended. Data resolution does not match other tables.","Join not recommended. Data resolution does not match other tables.",NA
 "inv_fieldData","inv_dnaExtraction","geneticSampleID","geneticSampleID",NA
 "inv_dnaExtraction","inv_pcrAmplification","dnaSampleID","dnaSampleID",NA
 "inv_dnaExtraction","inv_markerGeneSequencing","dnaSampleID","dnaSampleID",NA
