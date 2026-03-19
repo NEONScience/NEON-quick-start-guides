@@ -1,1 +1,1 @@
-RGB (red, green, blue) and IR (infrared) images of the plant canopy taken from an automated camera on the tower top. Images are collected every 15 minutes and closely follow protocols of the Phenocam Network.
+Four-channel RGB+IR (red, green, blue, and infrared) digtital images of the plant canopy are taken from an automated camera on the top of terrestrial core and gradient towers. Images are collected every 30 minutes and closely follow protocols of the Phenocam Network.
