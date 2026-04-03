@@ -1,2 +1,1 @@
-The PhenoCam Network provides a number of software tools, packages, and resources for analyzing images on their website, as well as region of interest (ROI) masking .tif files and timeseries data for green chromatic coordinate values at many NEON sites.
-
+The PhenoCam Network provides a number of software tools, packages, and resources for analyzing images on their website, as well as region of interest (ROI) masking .tif files, timeseries data for green chromatic coordinate (gcc) values, and phenological transition dates at all NEON terrestrial towers.
