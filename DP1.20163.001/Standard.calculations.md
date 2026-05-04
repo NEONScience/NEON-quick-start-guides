@@ -1,6 +1,6 @@
 For phytoplankton and seston, use the following variables for concentration per L:
 1. 2014-2023: alg_algaeExternalLabDataPerSample$analyteConcentration
-2. 2024-present: alg_algaeDataPerSampleCompChl$analyteConcentration
+2. 2024-present: alg_algaeDataPerSampleCompChl$analyteConcentration | alg_algaeDataPerSampleCompCNPS$analyteConcentration
 
 For periphyton, follow this example code in R to calculate analyte concentrations per square meter:
 
