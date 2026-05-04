@@ -14,7 +14,8 @@ alg_join1 <- neonOS::joinTableNEON(alg_algaeExternalLabDataPerSample, alg_domain
 ```
 alg_fieldData_periphyton <- alg_fieldData %>%
   filter(algalSampleType != "phytoplankton" & algalSampleType != "seston")
-alg_fieldData_subset <- alg_fieldData_periphyton[ , c("parentSampleID", "benthicArea")] %>% distinct()
+alg_fieldData_subset <- alg_fieldData_periphyton[,c("parentSampleID", "benthicArea")] %>%
+  distinct()
 alg_join2 <- dplyr::left_join(alg_join1, alg_fieldData_subset,
   by = "parentSampleID")
 ```
@@ -30,14 +31,16 @@ alg_join2$concentrationPerM2 <- alg_join2$analyteConcentration *
 ```
 algCompCHL_join1 <- neonOS::joinTableNEON(alg_algaeDataPerSampleCompChl,
   alg_domainLabChemistryComp) 
-algCompCHL_join1 <- algCompCHL_join1 %>% dplyr::filter(analysisType == "chlorophyll/pheophytin")
+algCompCHL_join1 <- algCompCHL_join1 %>%
+  dplyr::filter(analysisType == "chlorophyll/pheophytin")
 ```
 
 2. Subset and join with field data to include the benthicArea
 ```
 alg_fieldData_periphyton <- alg_fieldData %>%
   filter(algalSampleType != "phytoplankton" & algalSampleType != "seston")
-alg_fieldData_subset <- alg_fieldData_periphyton[ , c("compositeSampleID", "benthicArea")] %>% distinct()
+alg_fieldData_subset <- alg_fieldData_periphyton[,c("compositeSampleID", "benthicArea")] %>%
+  distinct()
 algCompCHL_join2 <- dplyr::left_join(algCompCHL_join1, alg_fieldData_subset,
   by = "compositeSampleID")
 ```
@@ -61,7 +64,8 @@ algCompCNPS_join1 <- algCompCNPS_join1 %>%
 ```
 alg_fieldData_periphyton <- alg_fieldData %>%
   filter(algalSampleType != "phytoplankton" & algalSampleType != "seston")
-alg_fieldData_subset <- alg_fieldData_periphyton[ , c("compositeSampleID", "benthicArea")] %>% distinct()
+alg_fieldData_subset <- alg_fieldData_periphyton[,c("compositeSampleID", "benthicArea")] %>%
+  distinct()
 algCompCNPS_join2 <- dplyr::left_join(algCompCNPS_join1, alg_fieldData_subset,
   by = "compositeSampleID")
 ```
