@@ -2,4 +2,4 @@ Information about management and disturbance events necessarily is somewhat qual
 
 The [Working with NEON Site Management Data](https://www.neonscience.org/resources/learning-hub/tutorials/site-management) tutorial demonstrates how to access and work with NEON Site Management Data. 
 
-In additions, the [neonSiteMgmtEventData](https://github.com/NEONScience/neonSiteMgmtEventData) code package includes tools to filter, summarize, and spatially visualize disturbance and management event data.
+In addition, the [neonSiteMgmtEventData](https://github.com/NEONScience/neonSiteMgmtEventData) code package includes tools to filter, summarize, and spatially visualize disturbance and management event data.
