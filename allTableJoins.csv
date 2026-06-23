@@ -491,35 +491,49 @@
 "mga_swGroupAbundances","amc_fieldCellCounts","geneticSampleID","geneticSampleID",NA
 "mga_labSummary","Any other table","Join not recommended. Data resolution does not match other tables.","Join not recommended. Data resolution does not match other tables.",NA
 "amb_fieldParent","mms_benthicMetagenomeDnaExtraction","metagenomicsSampleID","genomicsSampleID",NA
+"mic_benthicDnaPooling","mms_benthicMetagenomeDnaExtraction","Not fully automatable: multiple subsampleIDs are pooled into each dnaSampleIDList","",NA
+"mic_benthicDnaPooling","amb_fieldParent","Requires intermediate table: join via mms_benthicMetagenomeDnaExtraction","",NA
+"mic_benthicDnaPooling","mms_benthicMetagenomeSequencing","poolSampleID","dnaSampleID",NA
+"mic_benthicDnaPooling","mms_benthicRawDataFiles","poolSampleID","dnaSampleID",NA
 "mms_benthicMetagenomeDnaExtraction","mms_benthicMetagenomeSequencing","dnaSampleID","dnaSampleID",NA
 "mms_benthicMetagenomeSequencing","mms_benthicRawDataFiles","dnaSampleID","dnaSampleID",NA
 "amb_fieldParent","mms_benthicMetagenomeSequencing","Requires intermediate table: join via mms_benthicMetagenomeDnaExtraction","",NA
 "amb_fieldParent","mms_benthicRawDataFiles","Requires intermediate table: join via mms_benthicMetagenomeDnaExtraction","",NA
 "mms_benthicMetagenomeDnaExtraction","mms_benthicRawDataFiles","dnaSampleID","dnaSampleID",NA
+"mmg_benthicDnaExtraction","mic_benthicDnaPooling","Not fully automatable: multiple subsampleIDs are pooled into each dnaSampleIDList","",NA
 "mmg_benthicDnaExtraction","mmg_benthicPcrAmplification_16S","dnaSampleID","dnaSampleID",NA
 "mmg_benthicDnaExtraction","mmg_benthicPcrAmplification_ITS","dnaSampleID","dnaSampleID",NA
-"mmg_benthicPcrAmplification_16S","mmg_benthicMarkerGeneSequencing_16S","dnaSampleID","dnaSampleID",NA
-"mmg_benthicPcrAmplification_ITS","mmg_benthicMarkerGeneSequencing_ITS","dnaSampleID","dnaSampleID",NA
-"mmg_benthicMarkerGeneSequencing_16S","mmg_benthicRawDataFiles","Not fully automatable: Filter the raw data table to only 16S samples, then join on dnaSampleID","Not fully automatable: Filter the raw data table to only 16S samples, then join on dnaSampleID",NA
-"mmg_benthicMarkerGeneSequencing_ITS","mmg_benthicRawDataFiles","Not fully automatable: Filter the raw data table to only ITS samples, then join on dnaSampleID","Not fully automatable: Filter the raw data table to only ITS samples, then join on dnaSampleID",NA
+"mic_benthicDnaPooling","mmg_benthicPcrAmplification_16S","poolSampleID","dnaSampleID",NA
+"mic_benthicDnaPooling","mmg_benthicPcrAmplification_ITS","poolSampleID","dnaSampleID",NA
+"mic_benthicDnaPooling","mmg_benthicMarkerGeneSequencing_16S","poolSampleID","dnaSampleID",NA
+"mic_benthicDnaPooling","mmg_benthicMarkerGeneSequencing_ITS","poolSampleID","dnaSampleID",NA
+"mic_benthicDnaPooling","mmg_benthicRawDataFiles","poolSampleID","dnaSampleID",NA
+"mic_benthicDnaPooling","amb_fieldParent","Requires intermediate table: join via mmg_benthicDnaExtraction","",NA
+"mmg_benthicPcrAmplification_16S","mmg_benthicMarkerGeneSequencing_16S","dnaSampleID","",NA
+"mmg_benthicPcrAmplification_ITS","mmg_benthicMarkerGeneSequencing_ITS","dnaSampleID","",NA
+"mmg_benthicMarkerGeneSequencing_16S","mmg_benthicRawDataFiles","Not fully automatable: Filter the raw data table to only 16S samples, then join on dnaSampleID","",NA
+"mmg_benthicMarkerGeneSequencing_ITS","mmg_benthicRawDataFiles","Not fully automatable: Filter the raw data table to only ITS samples, then join on dnaSampleID","",NA
 "mmg_benthicDnaExtraction","amb_fieldParent","geneticSampleID","geneticSampleID",NA
-"mmg_benthicMarkerGeneSequencing_16S","mcc_benthicSeqVariantMetadata_16S","dnaSampleID","dnaSampleID",NA
-"mmg_benthicMarkerGeneSequencing_ITS","mcc_benthicSeqVariantMetadata_ITS","dnaSampleID","dnaSampleID",NA
-"amb_fieldParent","mmg_benthicMarkerGeneSequencing_16S","Requires intermediate table: join via mmg_benthicDnaExtraction table","Requires intermediate table: join via mmg_benthicDnaExtraction table",NA
-"amb_fieldParent","mmg_benthicMarkerGeneSequencing_ITS","Requires intermediate table: join via mmg_benthicDnaExtraction table","Requires intermediate table: join via mmg_benthicDnaExtraction table",NA
-"amb_fieldParent","mmg_benthicPcrAmplification_16S","Requires intermediate table: join via mmg_benthicDnaExtraction table","Requires intermediate table: join via mmg_benthicDnaExtraction table",NA
-"amb_fieldParent","mmg_benthicPcrAmplification_ITS","Requires intermediate table: join via mmg_benthicDnaExtraction table","Requires intermediate table: join via mmg_benthicDnaExtraction table",NA
-"amb_fieldParent","mmg_benthicRawDataFiles","Requires intermediate table: join via mmg_benthicDnaExtraction table","Requires intermediate table: join via mmg_benthicDnaExtraction table",NA
+"amb_fieldParent","mmg_benthicMarkerGeneSequencing_16S","Requires intermediate table: join via mmg_benthicDnaExtraction and mic_benthicDnaPooling tables","",NA
+"amb_fieldParent","mmg_benthicMarkerGeneSequencing_ITS","Requires intermediate table: join via mmg_benthicDnaExtraction and mic_benthicDnaPooling tables","",NA
+"amb_fieldParent","mmg_benthicPcrAmplification_16S","Requires intermediate table: join via mmg_benthicDnaExtraction and mic_benthicDnaPooling tables","",NA
+"amb_fieldParent","mmg_benthicPcrAmplification_ITS","Requires intermediate table: join via mmg_benthicDnaExtraction and mic_benthicDnaPooling tables","",NA
+"amb_fieldParent","mmg_benthicRawDataFiles","Requires intermediate table: join via mmg_benthicDnaExtraction and mic_benthicDnaPooling tables","",NA
 "mmg_benthicDnaExtraction","mmg_benthicMarkerGeneSequencing_16S","dnaSampleID","dnaSampleID",NA
 "mmg_benthicDnaExtraction","mmg_benthicMarkerGeneSequencing_ITS","dnaSampleID","dnaSampleID",NA
 "mmg_benthicDnaExtraction","mmg_benthicRawDataFiles","dnaSampleID","dnaSampleID",NA
-"mmg_benthicMarkerGeneSequencing_16S","mmg_benthicMarkerGeneSequencing_ITS","Join not recommended: different sequencing types","Join not recommended: different sequencing types",NA
-"mmg_benthicMarkerGeneSequencing_16S","mmg_benthicPcrAmplification_ITS","Join not recommended: different sequencing types","Join not recommended: different sequencing types",NA
-"mmg_benthicMarkerGeneSequencing_ITS","mmg_benthicPcrAmplification_16S","Join not recommended: different sequencing types","Join not recommended: different sequencing types",NA
-"mmg_benthicPcrAmplification_16S","mmg_benthicPcrAmplification_ITS","Join not recommended: different sequencing types","Join not recommended: different sequencing types",NA
-"mmg_benthicPcrAmplification_16S","mmg_benthicRawDataFiles","Not fully automatable: Filter the raw data table to only 16S samples, then join on dnaSampleID","Not fully automatable: Filter the raw data table to only 16S samples, then join on dnaSampleID",NA
-"mmg_benthicPcrAmplification_ITS","mmg_benthicRawDataFiles","Not fully automatable: Filter the raw data table to only ITS samples, then join on dnaSampleID","Not fully automatable: Filter the raw data table to only ITS samples, then join on dnaSampleID",NA
+"mmg_benthicMarkerGeneSequencing_16S","mmg_benthicMarkerGeneSequencing_ITS","Join not recommended: different sequencing types","",NA
+"mmg_benthicMarkerGeneSequencing_16S","mmg_benthicPcrAmplification_ITS","Join not recommended: different sequencing types","",NA
+"mmg_benthicMarkerGeneSequencing_ITS","mmg_benthicPcrAmplification_16S","Join not recommended: different sequencing types","",NA
+"mmg_benthicPcrAmplification_16S","mmg_benthicPcrAmplification_ITS","Join not recommended: different sequencing types","",NA
+"mmg_benthicPcrAmplification_16S","mmg_benthicRawDataFiles","Not fully automatable: Filter the raw data table to only 16S samples, then join on dnaSampleID","",NA
+"mmg_benthicPcrAmplification_ITS","mmg_benthicRawDataFiles","Not fully automatable: Filter the raw data table to only ITS samples, then join on dnaSampleID","",NA
 "amc_fieldGenetic","mms_swMetagenomeDnaExtraction","metagenomicSampleID","genomicsSampleID",NA
+"mic_swDnaPooling","mms_swMetagenomeDnaExtraction","Not fully automatable: multiple subsampleIDs are pooled into each dnaSampleIDList ","",NA
+"mic_swDnaPooling","amc_fieldGenetic","Requires intermediate table: join via mms_swMetagenomeDnaExtraction table","",NA
+"mic_swDnaPooling","amc_fieldSuperParent","Requires intermediate table: join via amc_fieldGenetic table","",NA
+"mic_swDnaPooling","mms_swMetagenomeSequencing","poolSampleID","dnaSampleID",NA
+"mic_swDnaPooling","mms_swRawDataFiles","poolSampleID","dnaSampleID",NA
 "mms_swMetagenomeDnaExtraction","mms_swMetagenomeSequencing","dnaSampleID","dnaSampleID",NA
 "mms_swMetagenomeSequencing","mms_metagenomeDnaExtraction","dnaSampleID","dnaSampleID",NA
 "mms_swRawDataFiles","mms_swMetagenomeDnaExtraction","dnaSampleID","dnaSampleID",NA
@@ -530,7 +544,15 @@
 "amc_fieldSuperParent","mms_swMetagenomeDnaExtraction","Requires intermediate table: join via mms_fieldGenetic table","",NA
 "amc_fieldSuperParent","mms_swMetagenomeSequencing","Requires intermediate table: join via mms_fieldGenetic and mms_swMetagenomeDnaExtraction tables","",NA
 "amc_fieldSuperParent","mms_swRawDataFiles","Requires intermediate table: join via mms_fieldGenetic and mms_swMetagenomeDnaExtraction tables","",NA
-"amc_fieldGenetic","mmg_swDnaExtraction","geneticSampleID","geneticSampleID",NA
+"amc_fieldGenetic","mmg_swDnaExtraction","geneticSampleID","",NA
+"mmg_swDnaExtraction","mic_swDnaPooling","Not fully automatable: multiple subsampleIDs are pooled into each dnaSampleIDList","",NA
+"mic_swDnaPooling","mmg_swPcrAmplification_16S","poolSampleID","dnaSampleID",NA
+"mic_swDnaPooling","mmg_swPcrAmplification_ITS","poolSampleID","dnaSampleID",NA
+"mic_swDnaPooling","mmg_swMarkerGeneSequencing_16S","poolSampleID","dnaSampleID",NA
+"mic_swDnaPooling","mmg_swMarkerGeneSequencing_ITS","poolSampleID","dnaSampleID",NA
+"mic_swDnaPooling","mmg_swRawDataFiles","poolSampleID","dnaSampleID",NA
+"mic_swDnaPooling","amc_fieldGenetic","Requires intermediate table: join via mmg_swDnaExtraction table","",NA
+"mic_swDnaPooling","amc_fieldSuperParent","Requires intermediate table: join via amc_fieldGenetic table","",NA
 "mmg_swPcrAmplification_16S","mmg_swDnaExtraction","dnaSampleID","dnaSampleID",NA
 "mmg_swPcrAmplification_ITS","mmg_swDnaExtraction","dnaSampleID","dnaSampleID",NA
 "mmg_swMarkerGeneSequencing_16S","mmg_swPcrAmplification_16S","dnaSampleID","dnaSampleID",NA
@@ -540,23 +562,23 @@
 "mmg_swRawDataFiles","mmg_swPcrAmplification_ITS","dnaSampleID","dnaSampleID",NA
 "mmg_swRawDataFiles","mmg_swDnaExtraction","dnaSampleID","dnaSampleID",NA
 "amc_fieldGenetic","amc_fieldSuperParent","parentSampleID","parentSampleID",NA
-"amc_fieldGenetic","mmg_swMarkerGeneSequencing_16S","Requires intermediate table: join via mmg_swDnaExtraction table","Requires intermediate table: join via mmg_swDnaExtraction table",NA
-"amc_fieldGenetic","mmg_swMarkerGeneSequencing_ITS","Requires intermediate table: join via mmg_swDnaExtraction table","Requires intermediate table: join via mmg_swDnaExtraction table",NA
-"amc_fieldGenetic","mmg_swPcrAmplification_16S","Requires intermediate table: join via mmg_swDnaExtraction table","Requires intermediate table: join via mmg_swDnaExtraction table",NA
-"amc_fieldGenetic","mmg_swPcrAmplification_ITS","Requires intermediate table: join via mmg_swDnaExtraction table","Requires intermediate table: join via mmg_swDnaExtraction table",NA
-"amc_fieldGenetic","mmg_swRawDataFiles","Requires intermediate table: join via mmg_swDnaExtraction table","Requires intermediate table: join via mmg_swDnaExtraction table",NA
-"amc_fieldSuperParent","mmg_swDnaExtraction","Requires intermediate table: join via amc_fieldGenetic table","Requires intermediate table: join via amc_fieldGenetic table",NA
-"amc_fieldSuperParent","mmg_swMarkerGeneSequencing_16S","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables",NA
-"amc_fieldSuperParent","mmg_swMarkerGeneSequencing_ITS","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables",NA
-"amc_fieldSuperParent","mmg_swPcrAmplification_16S","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables",NA
-"amc_fieldSuperParent","mmg_swPcrAmplification_ITS","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables",NA
-"amc_fieldSuperParent","mmg_swRawDataFiles","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables",NA
-"mmg_swMarkerGeneSequencing_16S","mmg_swMarkerGeneSequencing_ITS","Join not recommended: different sequencing types","Join not recommended: different sequencing types",NA
-"mmg_swMarkerGeneSequencing_16S","mmg_swPcrAmplification_ITS","Join not recommended: different sequencing types","Join not recommended: different sequencing types",NA
+"amc_fieldGenetic","mmg_swMarkerGeneSequencing_16S","Requires intermediate table: join via mmg_swDnaExtraction table","",NA
+"amc_fieldGenetic","mmg_swMarkerGeneSequencing_ITS","Requires intermediate table: join via mmg_swDnaExtraction table","",NA
+"amc_fieldGenetic","mmg_swPcrAmplification_16S","Requires intermediate table: join via mmg_swDnaExtraction table","",NA
+"amc_fieldGenetic","mmg_swPcrAmplification_ITS","Requires intermediate table: join via mmg_swDnaExtraction table","",NA
+"amc_fieldGenetic","mmg_swRawDataFiles","Requires intermediate table: join via mmg_swDnaExtraction table","",NA
+"amc_fieldSuperParent","mmg_swDnaExtraction","Requires intermediate table: join via amc_fieldGenetic table","",NA
+"amc_fieldSuperParent","mmg_swMarkerGeneSequencing_16S","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables","",NA
+"amc_fieldSuperParent","mmg_swMarkerGeneSequencing_ITS","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables","",NA
+"amc_fieldSuperParent","mmg_swPcrAmplification_16S","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables","",NA
+"amc_fieldSuperParent","mmg_swPcrAmplification_ITS","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables","",NA
+"amc_fieldSuperParent","mmg_swRawDataFiles","Requires intermediate table: join via amc_fieldGenetic and mmg_swDnaExtraction tables","",NA
+"mmg_swMarkerGeneSequencing_16S","mmg_swMarkerGeneSequencing_ITS","Join not recommended: different sequencing types","",NA
+"mmg_swMarkerGeneSequencing_16S","mmg_swPcrAmplification_ITS","Join not recommended: different sequencing types","",NA
 "mmg_swMarkerGeneSequencing_16S","mmg_swRawDataFiles","dnaSampleID","dnaSampleID",NA
-"mmg_swMarkerGeneSequencing_ITS","mmg_swPcrAmplification_16S","Join not recommended: different sequencing types","Join not recommended: different sequencing types",NA
+"mmg_swMarkerGeneSequencing_ITS","mmg_swPcrAmplification_16S","Join not recommended: different sequencing types","",NA
 "mmg_swMarkerGeneSequencing_ITS","mmg_swRawDataFiles","dnaSampleID","dnaSampleID",NA
-"mmg_swPcrAmplification_16S","mmg_swPcrAmplification_ITS","Join not recommended: different sequencing types","Join not recommended: different sequencing types",NA
+"mmg_swPcrAmplification_16S","mmg_swPcrAmplification_ITS","Join not recommended: different sequencing types","",NA
 "mmg_swPcrAmplification_16S","mmg_swRawDataFiles","dnaSampleID","dnaSampleID",NA
 "fsp_boutMetadata","fsp_sampleMetadata","eventID","eventID",NA
 "fsp_sampleMetadata","cfc_fieldData","sampleID","sampleID",NA
