@@ -4,8 +4,8 @@ amc_fieldGenetic|mms_swMetagenomeDnaExtraction|metagenomicSampleID|genomicsSampl
 mic_swDnaPooling|mms_swMetagenomeDnaExtraction|Not fully automatable: multiple subsampleIDs are pooled into each dnaSampleIDList ||
 mic_swDnaPooling|amc_fieldGenetic|Requires intermediate table: join via mms_swMetagenomeDnaExtraction table||
 mic_swDnaPooling|amc_fieldSuperParent|Requires intermediate table: join via amc_fieldGenetic table||
-mic_swDnaPooling|mms_swMetagenomeSequencing| poolSampleID |dnaSampleID|
-mic_swDnaPooling|mms_swRawDataFiles| poolSampleID |dnaSampleID|
+mic_swDnaPooling|mms_swMetagenomeSequencing|poolSampleID|dnaSampleID|
+mic_swDnaPooling|mms_swRawDataFiles|poolSampleID|dnaSampleID|
 mms_swMetagenomeDnaExtraction|mms_swMetagenomeSequencing|dnaSampleID|dnaSampleID|
 mms_swMetagenomeSequencing|mms_metagenomeDnaExtraction|dnaSampleID|dnaSampleID|
 mms_swRawDataFiles|mms_swMetagenomeDnaExtraction|dnaSampleID|dnaSampleID|
