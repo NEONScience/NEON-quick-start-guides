@@ -1,1 +1,3 @@
 Raw images are sent to the PhenoCam Network and undergo QA/QC via protocols outlined in Richardson et al. (2018). 
+
+Richardson, A.D., K. Hufkens, T. Milliman, D.M. Aubrecht, M. Chen, J.M. Gray, M. R. Johnston, T.F. Keenan, S.T. Klosterman, M. Kosmala, E.K. Melaas, M.A. Friedl, and S. Frolking. 2018. Tracking vegetation phenology across diverse North American biomes using PhenoCam imagery. Scientific Data 5:180028. https://doi.org/10.1038/sdata.2018.28
