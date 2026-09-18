@@ -11,5 +11,5 @@ alg_algaeDataPerSampleCompChl|alg_domainLabChemistryComp|sampleID|analyteSampleI
 alg_algaeDataPerSampleCompCNPS|alg_domainLabChemistryComp|sampleID|analyteSampleID|
 alg_algaeDataPerSampleCompChl|alg_algaeExternalLabQA|Join not recommended. Users interested in data quality can join by batchID, analyte, this will create a longer table that includes blanks and standards.||
 alg_algaeDataPerSampleCompCNPS|alg_algaeExternalLabQA|Join not recommended. Users interested in data quality can join by batchID, analyte, this will create a longer table that includes blanks and standards.||
-alg_algaeExternalLabQA|alg_labBlank|sampleID|filterBlankRep1 or filterBlankRep2
+alg_algaeExternalLabQA|alg_labBlank|Not fully automatable: sampleID in alg_algaeExternalLabQA may correspond to either filterBlankRep1 or filterBlankRep2 in alg_labBlank||
 asi_externalLabPOMSummaryData|Any other table|Join not recommended. Quality control data can be connected to analyses by laboratoryName, analyte, and overlap of analysisDate with lab-specific start and end dates.||
