@@ -1,0 +1,1 @@
+"During data collection, a total station is used to map multiple points along the discharge cross-section (capturing as much of the right and left bank floodplain, the right and left banks, and the stream bed as possible) and a single point on the staff gauge. Coordinates (northing, easting, height) are produced by the total statiion for each mapped point.    "

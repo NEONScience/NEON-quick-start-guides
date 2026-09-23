@@ -1,1 +1,0 @@
-There are known issues when using Google Earth to view .KMZ Maps. If you are experienceing problems viewing these morphology layers it may be helpful to turn off the habitat unit polygons in order to view the geomorphic feature polygons.
