@@ -1,1 +1,1 @@
-RGB (red, green, blue) and IR (infrared) images of the plant canopy taken from an automated camera on the tower top. Images are collected every 15 minutes and closely follow protocols of the Phenocam Network.
+Automated Stardot cameras collect repeat, digital imagery of the ecosystem canopy from the top of NEON towers. Image collection closely follow protocols of the Phenocam Network (https://phenocam.nau.edu/webcam). These images are transmitted to the PhenoCam Network at 30-minute intervals.
